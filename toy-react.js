@@ -19,8 +19,8 @@ class ElementWrapper {
 
     appendChild(component) {
         let range = document.createRange();
-        range.setStart(this.root, this.root.childNodes.lenth);
-        range.setEnd(this.root, this.root.childNodes.lenth);
+        range.setStart(this.root, this.root.childNodes.length);
+        range.setEnd(this.root, this.root.childNodes.length);
         component[RENDER_TO_DOM](range);
     }
 
